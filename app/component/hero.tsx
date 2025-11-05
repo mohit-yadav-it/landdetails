@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="flex flex-row w-full gap-0 border-0 border-t-0 border-b-0">
       {/* Left side - Image */}
-      <div className="w-[45%] lg:w-[45%] h-[60vh] lg:h-[80vh] relative bg-white border-0 border-t-0 border-b-0 flex justify-end pr-1 lg:pr-1">
+      <div className="w-[45%] lg:w-[45%] h-[35vh] lg:h-[80vh] relative bg-white border-0 border-t-0 border-b-0 flex justify-end pr-1 lg:pr-1">
         <div className="relative w-full h-full max-w-[90%] lg:max-w-[65%]">
           <Image
             src="/hero.jpg"
@@ -19,7 +19,7 @@ export default function Hero() {
 
       {/* Right side - Content */}
       <div 
-        className="w-[55%] lg:w-[55%] flex flex-col justify-center items-start pl-2 lg:pl-26 pr-2 lg:pr-12 py-4 lg:py-8 bg-white border-0 border-t-0 border-b-0"
+        className="w-[55%] lg:w-[55%] flex flex-col justify-center items-start pl-2 lg:pl-26 pr-2 lg:pr-12 py-2 lg:py-8 bg-white border-0 border-t-0 border-b-0"
         style={{
           animation: 'slideInFromLeft 0.8s ease-out forwards',
         }}
