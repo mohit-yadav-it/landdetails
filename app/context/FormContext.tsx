@@ -1,5 +1,6 @@
 'use client';
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { generatePDF } from '../utils/generatePDF';
 
 // Form data types
 export interface OwnerDetail {
@@ -114,6 +115,9 @@ export function FormProvider({ children }: { children: ReactNode }) {
     const startTime = Date.now();
     
     try {
+      // Generate PDF before submitting
+      await generatePDF(formData);
+
       const submissionData = {
         ...formData,
         // Store file names and sizes instead of full files
